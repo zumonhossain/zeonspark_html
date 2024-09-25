@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Site Title -->
+        <title>Profile Address</title>
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Font Awesome icon -->
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <!--Owl Carousel -->
+        <link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css">
+        <!-- Style Css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+
+        <!-- page loading start -->
+        <div class="preloader" id="preloader">
+            <div class="ring"></div>
+            <span class="preloader_span">loading...</span>
+        </div>
+        <!-- page loading end -->
+
+        <!--============ Header Area Start ============-->
+        <header class="header_area">
+
+            <!-- header top start -->
+            <div class="header_top d-none d-lg-block">
+                <div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xxl-6 col-xl-5 col-lg-4">
+                                <div class="customize_your_outfit">
+                                    <button class="customize_your_outfit_btn">
+                                        <i class="fa-solid fa-shirt customize_your_outfit_shirt_icon"></i>
+                                        Customize your outfit
+                                        <i class="fa-solid fa-arrow-right customize_your_outfit_arrow_icon"></i>
+                                    </button>
+                                </div>
+                                <div class="header_top_order_tracking">
+                                    <a href="order_tracking.html" class="header_top_order_tracking_link">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                        Order Tracking
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-3">
+                                <div class="buy_wholesale">
+                                    <button class="buy_wholesale_btn">
+                                        <i class="fa-solid fa-city"></i>
+                                        Buy Wholesale
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-5 col-lg-5">
+                                <div class="discount_get_offer">
+                                    <p>৳500 Discount on 5000tk Purchase</p>
+                                    <button class="discount_get_offer_btn">
+                                        Get Offer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header top end -->
+        
+            <!-- header middle start -->
+            <div class="header_middle sticky-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-3 col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="header_middle_logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo.png" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12">
+        
+                            <!-- header mobile device start -->
+                            <div class="header_mobile_device d-lg-none d-md-block">
+                                <div class="header_mobile_table_cell">
+                                    <a class="header_mobile_toggle" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                        role="button" aria-controls="offcanvasExample">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </a> <!-- header mobile device toggle end -->
+                                    <div class="header_mobile_logo">
+                                        <a href="index.html">
+                                            <img src="assets/images/logo/logo.png" alt="logo">
+                                        </a>
+                                    </div> <!-- header mobile device logo end -->
+        
+                                    <div class="header_mobile_search" onclick="search()">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div> <!-- header mobile device search end -->
+        
+                                    <div class="header_mobile_icon">
+                                        <a data-bs-toggle="offcanvas" href="#fixed_product_sticky_id"
+                                            class="header_mobile_icon_link" data-title="Shopping cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span class="header_mobile_icon_link_count">
+                                                <span class="cartQty">5</span>
+                                            </span>
+                                        </a>
+                                    </div> <!-- header mobile device cart end -->
+        
+                                    <!-- <div class="header_mobile_icon">
+                                        <a href="tel:01000000000" class="header_mobile_icon_link">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </a>
+                                    </div> 
+        
+                                    <div class="header_mobile_icon">
+                                        <a href="be_a_partner.html" class="header_mobile_icon_link">
+                                            <i class="fa-solid fa-handshake"></i>
+                                        </a>
+                                    </div> 
+        
+                                    <div class="header_mobile_icon">
+                                        <a href="wishlist.html" class="header_mobile_icon_link">
+                                            <i class="fa-solid fa-heart"></i>
+                                        </a>
+                                    </div>
+        
+                                    <div class="header_mobile_icon">
+                                        <a href="profile.html" class="header_mobile_icon_link">
+                                            <i class="fa-regular fa-user"></i>
+                                        </a>
+                                    </div>  -->
+                                </div>
+                            </div>
+                            <!-- header mobile device end -->
+        
+                            <div id="search_id" class="header_middle_search_content search_class">
+                                <div class="header_middle_search">
+                                    <form action="">
+                                        <input type="text" onfocus="showSearchResult()" onblur="hideSearchResult()" placeholder="Search Your Products...." class="search__product">
+                                        <button type="submit" class="header_middle_search_link">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+        
+                            <!-- header search item  start -->
+                            <div class="header_search_item_content" style="display: none;">
+                                <div class="header_search_item">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header_search_item_link">
+                                                <div class="header_search_item_content">
+                                                    <div class="header_search_item_product_image">
+                                                        <img src="assets/images/product/1.jpeg" alt="product-image">
+                                                    </div>
+                                                    <div class="header_search_item_product_details">
+                                                        <div class="header_search_item_product_name">
+                                                            <p>Men's Denim Stylish Long dong</p>
+                                                        </div>
+                                                        <div class="header_search_item_product_price">
+                                                            <span class="header_search_item_product_new_price">৳500</span>
+                                                            <span class="header_search_item_product_discount_price">৳500</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- header search item  end -->
+
+                        </div>
+        
+        
+        
+                        <div class="col-xxl-4 col-xl-4 col-lg-3 d-none d-lg-block">
+                            <div class="header_middle_list">
+                                <ul>
+                                    <li>
+                                        <a href="order_tracking.html" class="header_middle_list_link" data-title="Order Tracking">
+                                            <i class="fa-solid fa-truck-fast"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:01000000000" class="header_middle_list_link" data-title="Call">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </a>
+                                        <span class="tooltips">Call</span>
+                                    </li>
+                                    <li>
+                                        <a href="be_a_partner.html" class="header_middle_list_link" data-title="Be a partner">
+                                            <i class="fa-solid fa-handshake"></i>
+                                        </a>
+                                        <span class="tooltips">Be a Partner</span>
+                                    </li>
+                                    <li>
+                                        <a data-bs-toggle="offcanvas" href="#fixed_product_sticky_id"
+                                            class="header_middle_list_link" data-title="Shopping cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span class="header_middle_list_cart_count">
+                                                <span class="cartQty">5</span>
+                                            </span>
+                                        </a>
+                                        <span class="tooltips">Cart</span>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist.html" class="header_middle_list_link" data-title="Wishlist">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <!-- <span class="header_middle_list_cart_count">
+                                                <span class="wishlistQty">5</span>
+                                            </span> -->
+                                        </a>
+                                        <span class="tooltips">Wishlist</span>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html" class="header_middle_list_link">
+                                            <div class="header_middle_list_table_cell">
+                                                <i class="fa-regular fa-user"></i>
+                                                <div class="header_middle_list_auth_text d-none d-xl-block">
+                                                    <span>Hi,</span>
+                                                    <span>Login/Signup</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <span class="tooltips">Account</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header middle end -->
+        
+            <!-- header bottom start -->
+            <div class="header_bottom d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="main_menu">
+                                <ul>
+                                    <li>
+                                        <a href="shop.html" class="main_menu_link">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category-wise-product.html" class="main_menu_link">
+                                            Women's Fashion
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category-wise-product.html"
+                                            class="main_menu_link">
+                                            Bag
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="category-wise-product.html" class="submenu_link">
+                                                    Jeans
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="category-wise-product.html" class="submenu_link">
+                                                    Panjabi
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="category-wise-product.html" class="submenu_link">
+                                                    Sub Menu
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li>
+                                                        <a href="category-wise-product.html" class="submenu_link">
+                                                            Double Pocket Shir
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-wise-product.html" class="submenu_link">
+                                                            Trouser
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-wise-product.html" class="submenu_link">
+                                                            Sweatshirt
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-wise-product.html" class="submenu_link">
+                                                            High Neck
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="category-wise-product.html" class="submenu_link">
+                                                            Hoodie
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="category-wise-product.html" class="submenu_link">
+                                                    Polo Shirt
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="category-wise-product.html" class="submenu_link">
+                                                    Hoodie
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="category-wise-product.html" class="main_menu_link">
+                                            Men's
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category-wise-product.html" class="main_menu_link">
+                                            Winter Collection
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category-wise-product.html" class="main_menu_link">
+                                            Skin Care
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="new_arrival.html" class="main_menu_link">
+                                            New Arrival
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header bottom end -->
+        
+        </header>
+        <!--============ Header Area End ============-->
+
+        <!--============ Profile Area Start ============-->
+        <section class="profile_area section_padding_bottom fixed_sticky_margin_top page_padding_top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="profile_left_side">
+                            <div class="profile_pic_content">
+                                <div class="profile_pic">
+                                    <img src="assets/images/user/1.png" alt="user">
+                                </div>
+                                <div class="profile_name">
+                                    <h5>Zumon Hossain</h5>
+                                </div>
+                            </div>
+                            <div class="profile_menu_list">
+                                <ul>
+                                    <li>
+                                        <a href="profile.html" class="profile_menu_list_link">
+                                            <i class="fa-solid fa-table-cells-large"></i>
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="profile_order_page.html" class="profile_menu_list_link">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            Orders
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="profile_address_page.html" class="profile_menu_list_link">
+                                            <i class="fa-solid fa-house-chimney"></i>
+                                            Address
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="profile_account_details_page.html" class="profile_menu_list_link">
+                                            <i class="fa-regular fa-user"></i>
+                                            Account Details
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="profile_menu_list_link">
+                                            <i class="fa-solid fa-right-from-bracket"></i>
+                                            Logout
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="profile_right_side">
+                            <div class="profile_page_content">
+                                <div class="profile_address_details">
+                                    <p>The following addresses will be used on the checkout page by default.</p>
+                                    <div class="row gy-4 section_top_space">
+                                        <div class="col-xxl-6">
+                                            <div class="profile_shipping_address">
+                                                <h3>Shipping Address</h3>
+                                                <div class="profile_shipping_address_list">
+                                                    <ul>
+                                                        <li>
+                                                            <p><strong>Name: </strong>Mohasagor IT</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>Email: </strong>info@mohasagorit.solutions</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>Phone: </strong>+8801824222653</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>Address: </strong>Benaroshi Polli, Mirpur-10, Dhaka-1216, Bangladesh</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xxl-6">
+                                            <div class="profile_shipping_address">
+                                                <h3>Billing Address</h3>
+                                                <div class="profile_shipping_address_list">
+                                                    <ul>
+                                                        <li>
+                                                            <p><strong>Name: </strong>Mohasagor IT</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>Email: </strong>info@mohasagorit.solutions</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>Phone: </strong>+8801824222653</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><strong>Address: </strong>Benaroshi Polli, Mirpur-10, Dhaka-1216, Bangladesh</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============ Profile Area End ============-->
+
+        <!--============ Footer Area Start ============-->
+        <footer class="footer_area" style="background-image: url('assets/images/footer_bg/bg.jpg');">
+            <!-- footer top start -->
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-4 col-xl-3 col-lg-12 mb_xl_30 footer_border_right">
+                            <div class="footer_content">
+                                <div class="footer_logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo/logo.png" alt="logo">
+                                    </a>
+                                </div>
+                                <div class="footer_address">
+                                    <ul>
+                                        <li>
+                                            <div class="footer_address_location">
+                                                <div class="footer_address_icon">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                                <div class="footer_address_text">
+                                                    <p>House-03(3rd Floor),Avenue-01, Block-B,Kafrul,Section-10, Mirpur,Dhaka-1216.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="footer_address_table_cell">
+                                                <div class="footer_address_icon">
+                                                    <i class="fa-regular fa-envelope"></i>
+                                                </div>
+                                                <div class="footer_address_text">
+                                                    <a href="mailto:support@zeonspark.com" class="footer_address_link">
+                                                        support@zeonspark.com
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="footer_address_table_cell">
+                                                <div class="footer_address_icon">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                </div>
+                                                <div class="footer_address_text">
+                                                    <a href="tel:01730257623" class="footer_address_link">
+                                                        01730257623 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-3 footer_border_right">
+                            <div class="footer_content">
+                                <div class="footer_menu">
+                                    <div class="footer_title">
+                                        <h3>Help & Service</h3>
+                                    </div>
+                                    <div class="footer_panel">
+                                        <div class="footer_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="contact.html" class="footer_list_link">
+                                                        Contact Us
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Billing & Payments
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Shipping & Delivery
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Returns & Exchanges
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        FAQs
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Product Sizing
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-3 footer_border_right">
+                            <div class="footer_content">
+                                <div class="footer_menu">
+                                    <div class="footer_title">
+                                        <h3>Who We Are</h3>
+                                    </div>
+                                    <div class="footer_panel">
+                                        <div class="footer_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        About Zeonspark
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        History of Zeonspark
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Page One
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Page Two
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Page Three
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="footer_list_link">
+                                                        Page Four
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 footer_border_right">
+                            <div class="footer_content">
+                                <div class="footer_menu">
+                                    <div class="footer_title">
+                                        <h3>Account</h3>
+                                    </div>
+                                    <div class="footer_panel">
+                                        <div class="footer_list">
+                                            <ul>
+                                                <li>
+                                                    <a href="login.html" class="footer_list_link">
+                                                        Login
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="register.html" class="footer_list_link">
+                                                        Registration
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="profile_order_page.html" class="footer_list_link">
+                                                        Your Orders
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="wishlist.html" class="footer_list_link">
+                                                        Your Wishlist
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2 col-xl-3 col-lg-4 mt_md_30">
+                            <div class="footer_content">
+                                <div class="footer_facebook_page">
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frobebangladesh&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                        width="100%"
+                                        height="130"
+                                        style="border:none;overflow:hidden"
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer top end -->
+
+            <!-- footer middle start -->
+            <div class="footer_middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer_copyright">
+                                <p>Copyright © zeonspark.com 2023. All rights reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer_develop_credit">
+                                <p>Develop by <a href="https://mohasagorit.solutions/" target="_blank" class="footer_develop_credit_link">MIT</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer middle end -->
+
+            <!-- footer bottom start -->
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer_social">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="footer_social_link">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer_social_link">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer_social_link">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer_social_link">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer_social_link">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer_payment_method">
+                                <img src="assets/images/payment_method/1.png" alt="payment-method">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer bottom end -->
+            
+        </footer>
+        <!--============ Footer Area End ============-->
+
+
+
+
+
+
+        <!--============ Header Mobile Menu Area Start ============-->
+        <div class="header_mobile_menu offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="header_mobile_top">
+                <div class="header_mobile_logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header_mobile_close_icon" data-bs-dismiss="offcanvas">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="header_mobile_middle">
+                <div class="mobile_main_menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                            <i class="fa-solid fa-angle-down" onclick="mobileSubmenu()"></i>
+                            <ul id="mobile_submenu_id" class="mobile_main_submenu mobile_submenu_class">
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                    <i class="fa-solid fa-angle-down" onclick="mobileSubSubmenu()"></i>
+                                    <ul id="mobile_sub_submenu_id" class="mobile_main_sub_submenu mobile_sub_submenu_class">
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="mobile_main_sub_submenu_link">Sub Submenu</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="mobile_main_submenu_link">Submenu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile_main_menu_link">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--============ Header Mobile Menu Area End ============-->
+
+
+
+
+
+
+
+
+        <!--============ Fixed Product Cart Area Start ============-->
+            <!-- fixed product sticky cart start -->
+            <a class="fixed_product_sticky" data-bs-toggle="offcanvas" href="#fixed_product_sticky_id">
+                <div class="fixed_product_sticky_icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="fixed_product_sticky_price">
+                    <p>
+                        BDT
+                        4500
+                    </p>
+                </div>
+                <div class="fixed_product_sticky_count">
+                    <p>2 Items</p>
+                </div>
+            </a>
+            <!-- fixed product sticky cart end -->
+
+            <!-- fixed product cart start -->
+            <div class="fixed_product_cart_content offcanvas offcanvas-end" id="fixed_product_sticky_id">
+                <!-- fixed product cart header start -->
+                <div class="fixed_product_cart_header">
+                    <div class="fixed_product_cart_header_icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>5</span>
+                    </div>
+                    <div class="fixed_product_cart_header_close" data-bs-dismiss="offcanvas">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <!-- fixed product cart header end -->
+
+                <!-- fixed product cart body start -->
+                <div class="fixed_product_cart_body">
+                    <div class="fixed_product_cart_list">
+                        <ul>
+                            <li>
+                                <div class="fixed_product_cart_list_table_cell">
+                                    <!-- fixed product cart image start -->
+                                    <div class="fixed_product_cart_image">
+                                        <img src="assets/images/product/product_1.png" alt="product-image">
+                                    </div>
+                                    <!-- fixed product cart image end -->
+
+                                    <div class="fixed_product_cart_details">
+                                        <div class="fixed_product_cart_name_size_delete">
+                                            <div class="fixed_product_cart_name_size">
+                                                <!-- fixed product cart name start -->
+                                                <div class="fixed_product_cart_name">
+                                                    <h5>Hoodie Combo 2Pcs Pack Orange ghfggff</h5>
+                                                </div>
+                                                <!-- fixed product cart name end -->
+
+                                                <!-- fixed product cart size start -->
+                                                <div class="fixed_product_cart_size">
+                                                    <strong>Size:</strong>
+                                                    <span>M</span>
+                                                </div>
+                                                <!-- fixed product cart size end -->
+                                            </div>
+
+                                            <!-- fixed product cart delete start -->
+                                            <div class="fixed_product_cart_delete_icon">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </div>
+                                            <!-- fixed product cart delete end -->
+                                        </div>
+                                        <div class="fixed_product_cart_qty_price">
+                                            <!-- fixed product cart quantity start -->
+                                            <div class="fixed_product_cart_qty">
+                                                <div class="fixed_product_cart_qty_minus">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="fixed_product_cart_qty_plus">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <!-- fixed product cart quantity end -->
+
+                                            <!-- fixed product cart price start -->
+                                            <div class="fixed_product_cart_close_price">
+                                                <p>BDT 458665</p>
+                                            </div>
+                                            <!-- fixed product cart price end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fixed_product_cart_list_table_cell">
+                                    <!-- fixed product cart image start -->
+                                    <div class="fixed_product_cart_image">
+                                        <img src="assets/images/product/product_1.png" alt="product-image">
+                                    </div>
+                                    <!-- fixed product cart image end -->
+
+                                    <div class="fixed_product_cart_details">
+                                        <div class="fixed_product_cart_name_size_delete">
+                                            <div class="fixed_product_cart_name_size">
+                                                <!-- fixed product cart name start -->
+                                                <div class="fixed_product_cart_name">
+                                                    <h5>Hoodie Combo 2Pcs Pack Orange</h5>
+                                                </div>
+                                                <!-- fixed product cart name end -->
+
+                                                <!-- fixed product cart size start -->
+                                                <div class="fixed_product_cart_size">
+                                                    <strong>Size:</strong>
+                                                    <span>M</span>
+                                                </div>
+                                                <!-- fixed product cart size end -->
+                                            </div>
+
+                                            <!-- fixed product cart delete start -->
+                                            <div class="fixed_product_cart_delete_icon">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </div>
+                                            <!-- fixed product cart delete end -->
+                                        </div>
+                                        <div class="fixed_product_cart_qty_price">
+                                            <!-- fixed product cart quantity start -->
+                                            <div class="fixed_product_cart_qty">
+                                                <div class="fixed_product_cart_qty_minus">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="fixed_product_cart_qty_plus">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <!-- fixed product cart quantity end -->
+
+                                            <!-- fixed product cart price start -->
+                                            <div class="fixed_product_cart_close_price">
+                                                <p>BDT 458665</p>
+                                            </div>
+                                            <!-- fixed product cart price end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fixed_product_cart_list_table_cell">
+                                    <!-- fixed product cart image start -->
+                                    <div class="fixed_product_cart_image">
+                                        <img src="assets/images/product/product_1.png" alt="product-image">
+                                    </div>
+                                    <!-- fixed product cart image end -->
+
+                                    <div class="fixed_product_cart_details">
+                                        <div class="fixed_product_cart_name_size_delete">
+                                            <div class="fixed_product_cart_name_size">
+                                                <!-- fixed product cart name start -->
+                                                <div class="fixed_product_cart_name">
+                                                    <h5>Hoodie Combo 2Pcs Pack Orange</h5>
+                                                </div>
+                                                <!-- fixed product cart name end -->
+
+                                                <!-- fixed product cart size start -->
+                                                <div class="fixed_product_cart_size">
+                                                    <strong>Size:</strong>
+                                                    <span>M</span>
+                                                </div>
+                                                <!-- fixed product cart size end -->
+                                            </div>
+
+                                            <!-- fixed product cart delete start -->
+                                            <div class="fixed_product_cart_delete_icon">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </div>
+                                            <!-- fixed product cart delete end -->
+                                        </div>
+                                        <div class="fixed_product_cart_qty_price">
+                                            <!-- fixed product cart quantity start -->
+                                            <div class="fixed_product_cart_qty">
+                                                <div class="fixed_product_cart_qty_minus">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="fixed_product_cart_qty_plus">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <!-- fixed product cart quantity end -->
+
+                                            <!-- fixed product cart price start -->
+                                            <div class="fixed_product_cart_close_price">
+                                                <p>BDT 458665</p>
+                                            </div>
+                                            <!-- fixed product cart price end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fixed_product_cart_list_table_cell">
+                                    <!-- fixed product cart image start -->
+                                    <div class="fixed_product_cart_image">
+                                        <img src="assets/images/product/product_1.png" alt="product-image">
+                                    </div>
+                                    <!-- fixed product cart image end -->
+
+                                    <div class="fixed_product_cart_details">
+                                        <div class="fixed_product_cart_name_size_delete">
+                                            <div class="fixed_product_cart_name_size">
+                                                <!-- fixed product cart name start -->
+                                                <div class="fixed_product_cart_name">
+                                                    <h5>Hoodie Combo 2Pcs Pack Orange</h5>
+                                                </div>
+                                                <!-- fixed product cart name end -->
+
+                                                <!-- fixed product cart size start -->
+                                                <div class="fixed_product_cart_size">
+                                                    <strong>Size:</strong>
+                                                    <span>M</span>
+                                                </div>
+                                                <!-- fixed product cart size end -->
+                                            </div>
+
+                                            <!-- fixed product cart delete start -->
+                                            <div class="fixed_product_cart_delete_icon">
+                                                <i class="fa-solid fa-trash"></i>
+                                            </div>
+                                            <!-- fixed product cart delete end -->
+                                        </div>
+                                        <div class="fixed_product_cart_qty_price">
+                                            <!-- fixed product cart quantity start -->
+                                            <div class="fixed_product_cart_qty">
+                                                <div class="fixed_product_cart_qty_minus">
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </div>
+                                                <input type="text" value="1">
+                                                <div class="fixed_product_cart_qty_plus">
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </div>
+                                            </div>
+                                            <!-- fixed product cart quantity end -->
+
+                                            <!-- fixed product cart price start -->
+                                            <div class="fixed_product_cart_close_price">
+                                                <p>BDT 458665</p>
+                                            </div>
+                                            <!-- fixed product cart price end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- fixed product cart body end -->
+
+                <!-- fixed product cart footer start -->
+                <div class="fixed_product_cart_footer">
+                    <div class="fixed_product_cart_footer_count">
+                        <strong>Subtotal</strong>
+                        <strong>
+                            BDT
+                            5450.00
+                        </strong>
+                    </div>
+                    <div class="fixed_product_cart_footer_checkout">
+                        <a href="checkout.html" class="fixed_product_cart_footer_checkout_link">Checkout</a>
+                    </div>
+                    <div class="fixed_product_cart_footer_view_cart">
+                        <a href="view_cart.html" class="fixed_product_cart_footer_view_cart_link">View Cart</a>
+                    </div>
+                </div>
+                <!-- fixed product cart footer end -->
+            </div>
+            <!-- fixed product cart end -->
+        <!--============ Fixed Product Cart Area End ============-->
+
+
+
+        <!--============ Fixed Footer Area Start ============-->
+        <div class="fixed_footer">
+            <ul>
+                <li>
+                    <a href="order_tracking.html" class="fixed_footer_link">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="order_tracking.html" class="fixed_footer_link">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Tracking</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:01600000000" class="fixed_footer_link">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="be_a_partner.html" class="fixed_footer_link">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Partner</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="wishlist.html" class="fixed_footer_link">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Wishlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="fixed_footer_link">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Account</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--============ Fixed Footer Area End ============-->
+
+
+
+
+        <!-- jquery 3.6.3 -->
+        <script src="assets/js/jquery-3.6.3.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Owl Carousel js -->
+        <script src="assets/js/plugin/owl.carousel.min.js"></script>
+        <!-- Zoomsl Js -->
+        <script src="assets/js/plugin/zoomsl.js"></script>
+        <!-- Waypoints js -->
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <!-- Custom jS -->
+        <script src="assets/js/custom.js"></script>
+
+
+        <!-- preloader -->
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function(){
+                loader.style.display = "none";
+            });
+        </script>
+
+
+
+
+        <script>
+            var acc = document.getElementsByClassName("footer_title");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                this.classList.toggle("footer_active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+                });
+            }
+        </script>
+
+        <script>
+            function search(){
+                document.getElementById("search_id").classList.toggle("search_toggle");
+            }
+        </script>
+
+        <script>
+            function mobileSubmenu(){
+                document.getElementById("mobile_submenu_id").classList.toggle("mobile_submenu_toggle");
+            }
+            function mobileSubSubmenu(){
+                document.getElementById("mobile_sub_submenu_id").classList.toggle("mobile_sub_submenu_toggle");
+            }
+        </script>
+
+
+
+    </body>
+</html>
